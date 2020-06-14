@@ -1,6 +1,7 @@
 package school;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Stream;
 
 public class Subject{
@@ -43,6 +44,20 @@ public class Subject{
     public int sumAll(Subject subject){
        int sum = subject.getMarks().stream().mapToInt(Integer::intValue).sum();
        return sum;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Subject subject = (Subject) o;
+        return Objects.equals(subjectName, subject.subjectName) &&
+                Objects.equals(marks, subject.marks);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(subjectName, marks);
     }
 
     @Override

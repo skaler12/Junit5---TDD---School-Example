@@ -1,6 +1,7 @@
 package school;
 
 import java.util.List;
+import java.util.Objects;
 
 public class GradeBook {
     private String studentName;
@@ -39,6 +40,20 @@ public class GradeBook {
         }
         double avg = (double)(liczba/gradeBook.getSubjectList().size());
         return avg;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GradeBook gradeBook = (GradeBook) o;
+        return Objects.equals(studentName, gradeBook.studentName) &&
+                Objects.equals(subjectList, gradeBook.subjectList);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(studentName, subjectList);
     }
 
     @Override
