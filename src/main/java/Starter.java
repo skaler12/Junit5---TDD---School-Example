@@ -2,7 +2,6 @@ import school.GradeBook;
 import school.Subject;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class Starter {
     public static void main(String[] args) {
@@ -36,7 +35,7 @@ public class Starter {
         polski.addMark(polski, 6);
         //srednia dla poslki
         System.out.println(polski.marksAverange(polski));
-        //srednia dla wszustkich z tego dzienniczka
+        //srednia dla wszystkich z tego dzienniczka
         System.out.println(gradeBook1.averangeAll(gradeBook1));
 
     }

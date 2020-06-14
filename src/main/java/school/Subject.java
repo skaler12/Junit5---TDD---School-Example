@@ -30,9 +30,7 @@ public class Subject{
         this.marks = marks;
     }
 
-    boolean addMark(Integer mark, Subject subject){
-        return subject.getMarks().add(mark);
-    }
+
     public double marksAverange(Subject subject){
         double sum = subject.getMarks().stream().mapToInt(Integer::intValue).sum();
         double averenge = (double)(sum/subject.getMarks().size());

@@ -36,7 +36,7 @@ public class GradeBook {
         double liczba = 0;
         for(int i = 0; i<= gradeBook.getSubjectList().size()-1; i++){
 
-                liczba = liczba + gradeBook.getSubjectList().get(i).marksAverange(gradeBook.getSubjectList().get(i));
+            liczba = liczba + gradeBook.getSubjectList().get(i).marksAverange(gradeBook.getSubjectList().get(i));
         }
         double avg = (double)(liczba/gradeBook.getSubjectList().size());
         return avg;
