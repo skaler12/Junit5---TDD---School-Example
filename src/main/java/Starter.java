@@ -29,6 +29,7 @@ public class Starter {
         System.out.println(gradeBook1.averangeAll(gradeBook1));
         //dodaje nowy przedmiot
         Subject polski = new Subject("Polski",new LinkedList<>());
+        //dodanie przedmiotu
         gradeBook1.addSubject(gradeBook1,polski);
         polski.addMark(polski, 4);
         polski.addMark(polski, 1);
