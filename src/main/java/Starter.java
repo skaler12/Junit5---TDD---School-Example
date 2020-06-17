@@ -34,6 +34,7 @@ public class Starter {
         polski.addMark(polski, 4);
         polski.addMark(polski, 1);
         polski.addMark(polski, 6);
+        polski.addMark(polski, 2);
         //srednia dla poslki
         System.out.println(polski.marksAverange(polski));
         //srednia dla wszystkich z tego dzienniczka
